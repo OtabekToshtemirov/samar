@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import './add-film.css';
 
-const AddFilm = ({addItem}) =>{
+const AddFilm = ({addItem }) =>{
 
     const [state, setState] = useState({name:'', views:''})
 

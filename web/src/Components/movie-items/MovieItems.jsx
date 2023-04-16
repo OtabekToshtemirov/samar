@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './movie-list-item.css';
 
 
@@ -6,8 +6,9 @@ function MovieListItem (props){
     const {favourite,name, views, onDelete,onFavourite } = props
 
     return(
+
         <div className={`movie-list-item ${favourite && 'favourite '}`}>
-            <div className="movie-list-item__info d-flex justify-content-between w-50">
+            <div className="movie-list-item__info d-flex justify-content-between w-75">
                 <div className="movie-list-item__name">{name}</div>
                 <div  className="movie-list-item__views">{views}
                     <i id={"eye"} className="fa fa-eye "></i>
